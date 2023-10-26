@@ -1,0 +1,53 @@
+.overlay{
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+  backdrop-filter: blur(2px);
+}
+
+.todo-modal{
+  position: fixed;
+  width: 500px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 5px;
+}
+
+
+.modal-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 20px;
+  background-color: whitesmoke;
+  user-select: none;
+
+  i{
+    cursor: pointer;
+  }
+  
+  p{
+    margin: 0;
+  }
+}
+
+.modal-body{
+  user-select: none;
+  margin-top: 20px;
+  padding: 0 15px;
+
+  .btn{
+    float: right;
+    margin-top: 20px;
+  }
+}
+

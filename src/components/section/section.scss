@@ -1,0 +1,33 @@
+#main_section{
+  width: 60%;
+  height: 80vh;
+  float: right;
+  overflow-y: scroll;
+}
+
+.tasks{
+  padding: 0;
+  padding-left: 10px;
+  user-select: none;
+}
+
+.task-item{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid gray;
+  padding: 20px;
+  border-radius: 5px;
+
+  i,input{
+    cursor: pointer;
+    user-select: none;
+  }
+  .task-title{
+    margin: 0;
+    display: flex;
+    gap: 30px;
+    font-size: 18px;
+  }
+}

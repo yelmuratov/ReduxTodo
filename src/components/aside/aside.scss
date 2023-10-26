@@ -1,0 +1,68 @@
+#aside{
+  width: 40%;
+  height: 80vh;
+  float: left;
+  overflow-y: scroll;
+}
+
+.hidden{
+  display: none;
+}
+
+.show{
+  display: block;
+}
+
+.category-item{
+  z-index: 200;
+}
+
+.categories{
+  padding: 0;
+  .category{
+    list-style: none;
+    padding: 0.25rem 1.25rem;
+    border: 1px solid gray;
+    user-select: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+
+    &__text{
+      margin-bottom: 0;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    &__text span:hover{
+      color: gray;
+    }
+
+    i{
+      cursor: pointer;
+    }
+
+    .icons{
+      span.plus-mark{
+      border: 1px solid gray;
+      margin-right: 10px;
+      padding: 0 5px;
+      font-weight: bold;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+
+    .fa-trash-can:hover{
+      color: red;
+    }
+    }
+  } 
+}
+
+.not-element{
+  color: gray;
+  font-size: 25px;
+  opacity: 50%;
+}

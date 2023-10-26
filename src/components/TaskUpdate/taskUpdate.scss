@@ -1,0 +1,51 @@
+.task-container{
+  padding: 5rem 2rem;
+
+  h1{
+    margin-bottom: 2rem;
+  }
+
+  .task-description{
+    height: 80vh;
+    width: 60%;
+    float: right;
+
+    .btns{
+      float: right;
+    }
+
+    .btn{
+      border: 1px solid gray;
+    }
+
+    .description{
+      margin-top: 3rem;
+      padding-left: 2rem;
+      user-select: none;
+
+      input[type='text']{
+        width: 400px;
+      }
+    }
+
+    .done{
+      display: flex;
+      align-items: center;
+      input{
+        margin-right: 10px;
+        cursor: pointer;
+      }
+    }
+
+    .texarea{
+      border: 1px solid rgb(0, 191, 255);
+      padding: 5px;
+      margin-top: 10px;
+      outline: none;
+    }
+  }
+}
+
+.clearfix{
+  clear: both;
+}

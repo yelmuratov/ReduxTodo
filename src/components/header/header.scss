@@ -1,0 +1,41 @@
+$primary-color:gray;
+
+@mixin Flexbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header{
+  height: 10vh;
+  @include Flexbox();
+
+  .search-panel{
+    @include Flexbox();
+    gap: 20px;
+    color: $primary-color;
+    
+    input[type="checkbox"]{
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+    .search-box{
+      border: 1px solid $primary-color;
+      border-radius: 5px;
+      overflow: hidden;
+      padding: 0 10px;
+      user-select: none;
+
+      .fa-xmark{
+        color: $primary-color;
+        cursor: pointer;
+      }
+
+      input{
+      border: none;
+      outline: none;
+    }
+    }
+  }
+}

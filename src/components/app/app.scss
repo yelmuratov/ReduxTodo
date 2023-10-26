@@ -1,0 +1,21 @@
+// Files
+@use '../header/header.scss';
+@use '../navbar/navbar.scss';
+@use '../aside/aside.scss';
+@use '../section/section.scss';
+@use '../modal/modal.scss';
+@use '../nestedCategory/nestedCategory.scss';
+@use '../updateModal/updateModal.scss';
+@use '../TaskUpdate/taskUpdate.scss';
+
+$primary-color:gray;
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+}
+
+.content{
+  height: 100vh;
+}

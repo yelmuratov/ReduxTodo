@@ -1,0 +1,12 @@
+ .nested-category{
+    padding-left: 18px;
+    z-index: 1000;
+    .nested__category-item{
+      list-style: none;
+      z-index: 1000;
+    }
+    
+    .category__text{
+      cursor: pointer;
+    }
+  }

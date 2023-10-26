@@ -1,0 +1,51 @@
+// variables
+$primary-color:gray;
+$border: 1px solid gray;
+
+@mixin Flexbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbar{
+  display: inline-block;
+  height: 10vh;
+  width: 100%;
+  user-select: none
+}
+
+
+.navbar-item{
+  @include Flexbox();
+  margin-top: 1rem;
+
+  input{
+    border: none;
+    outline: none;
+    color: $primary-color;
+  }
+}
+
+.add{
+    border: $border;
+    border-radius: 5px;
+    padding-left: 5px;
+    overflow: hidden;
+
+    .btn{
+      border-radius: 0 ;
+      border-left: 1px solid $primary-color;
+    }
+  }
+
+.progress__bar{
+  border: 1px solid rgb(197, 196, 196);
+  border-radius: 5px;
+  height: 8px;
+
+  &-value {
+    background-color: $primary-color;
+    height: 100%;
+  }
+}
